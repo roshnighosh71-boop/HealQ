@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealQ — Smart OPD Queue Management</title>
+
+    <!-- IMPORTANT: file must be named style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="queue-hospital" id="queue-hospital-name">
+    AIIMS New Delhi
+</div>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark"></span>
+            HealQ
+        </a>
+
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#hospitals">For hospitals</a>
+            <a href="#research">Research</a>
+            <a href="#dashboard">Dashboard</a>
+        </nav>
+
+        <a href="#pilot" class="nav-button">
+            Request a Pilot
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="live-dot"></span>
+                SMART OPD MANAGEMENT
+            </div>
+
+            <h1>
+                Skip the queue.<br>
+                <span>Know your wait.</span>
+            </h1>
+
+            <p class="hero-text">
+                HealQ makes OPD visits simpler with digital registration,
+                live token tracking, AI-powered health guidance and
+                hospital queue management.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#booking" class="primary-button">
+                    Book OPD Token →
+                </a>
+
+                <a href="#dashboard" class="secondary-button">
+                    View Live Queue
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <span>✓ Digital OPD</span>
+                <span>✓ Live Queue</span>
+                <span>✓ AI Guidance</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIVE QUEUE CARD -->
+
+        <div class="queue-card">
+
+            <div class="queue-header">
+
+                <div>
+                    <div class="queue-title">
+                        LIVE OPD QUEUE
+                    </div>
+
+                    <div class="queue-hospital">
+                        AIIMS New Delhi
+                    </div>
+                </div>
+
+                <div class="live-status">
+                    <span></span> LIVE
+                </div>
+
+            </div>
+
+            <div id="board-rows" class="board-rows">
+                <!-- JS fills this -->
+            </div>
+
+            <div class="queue-footer">
+
+                <select id="board-state">
+                    <option>Delhi</option>
+                </select>
+
+                <select id="board-hospital">
+                    <option>AIIMS New Delhi</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURES
+========================================================= -->
+
+<section id="features" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            WHY HEALQ
+        </span>
+
+        <h2>
+            A simpler hospital journey.
+        </h2>
+
+        <p>
+            From registration to consultation, HealQ connects
+            the complete OPD journey.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">01</div>
+
+            <h3>Digital OPD Registration</h3>
+
+            <p>
+                Register for OPD from your phone or through
+                a hospital kiosk without standing in long queues.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">02</div>
+
+            <h3>Live Queue Tracking</h3>
+
+            <p>
+                See your token position and estimated waiting
+                time before reaching the doctor.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">03</div>
+
+            <h3>AI Health Guidance</h3>
+
+            <p>
+                Get basic symptom-based guidance and suggestions
+                about the appropriate OPD department.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">04</div>
+
+            <h3>Hospital Dashboard</h3>
+
+            <p>
+                Hospitals can monitor queues, doctors,
+                beds and OPD workload from one dashboard.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section id="how-it-works" class="section dark-section">
+
+    <div class="section-heading light">
+
+        <span class="section-label">
+            HOW IT WORKS
+        </span>
+
+        <h2>
+            From registration to consultation.
+        </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <span>01</span>
+
+            <h3>Select Location</h3>
+
+            <p>
+                Choose your State / UT and hospital.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>02</span>
+
+            <h3>Choose Department</h3>
+
+            <p>
+                Select the OPD department you need.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>03</span>
+
+            <h3>Book Token</h3>
+
+            <p>
+                Enter patient details and receive your digital token.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>04</span>
+
+            <h3>Track & Visit</h3>
+
+            <p>
+                Monitor the live queue and arrive at the right time.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BOOKING
+========================================================= -->
+
+<section id="booking" class="section booking-section">
+
+    <div class="booking-container">
+
+        <div class="booking-intro">
+
+            <span class="section-label">
+                DIGITAL OPD
+            </span>
+
+            <h2>
+                Book your OPD token.
+            </h2>
+
+            <p>
+                Select your location, hospital and department.
+                Enter your details to receive a digital token.
+            </p>
+
+            <div class="booking-points">
+
+                <div>
+                    <span>✓</span>
+                    No unnecessary queue
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Live estimated wait time
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Hospital kiosk supported
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    ABHA / UHID compatible
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="booking-card">
+
+            <div class="card-heading">
+
+                <h3>Book OPD Token</h3>
+
+                <p>
+                    All fields marked * are required.
+                </p>
+
+            </div>
+
+
+            <form id="book-form">
+
+                <!-- STATE -->
+
+                <div class="form-group">
+
+                    <label for="book-state">
+                        State / UT *
+                    </label>
+
+                    <select id="book-state" required>
+                        <option value="">
+                            Select State / UT
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <!-- HOSPITAL -->
+
+                <div class="form-group">
+
+                    <label for="book-hospital">
+                        Hospital *
+                    </label>
+
+                    <select id="book-hospital" disabled required>
+
+                        <option value="">
+                            Select Hospital
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DEPARTMENT -->
+
+                <div class="form-group">
+
+                    <label for="book-dept">
+                        Department *
+                    </label>
+
+                    <select id="book-dept" disabled required>
+
+                        <option value="">
+                            Select Department
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="book-name">
+                            Patient Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="book-name"
+                            placeholder="Enter patient name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ABHA -->
+
+                    <div class="form-group">
+
+                        <label for="book-abha">
+                            ABHA / UHID *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="book-abha"
+                            placeholder="Enter ABHA / UHID"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="book-email">
+                            Email *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="book-email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="book-phone">
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="book-phone"
+                            placeholder="10-digit mobile number"
+                            maxlength="10"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Book OPD Token →
+                </button>
+
+
+                <!-- CONFIRMATION -->
+
+                <div
+                    id="book-confirm"
+                    class="confirmation"
+                    hidden
+                ></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     KIOSK
+========================================================= -->
+
+<section id="hospitals" class="section kiosk-section">
+
+    <div class="kiosk-content">
+
+        <div>
+
+            <span class="section-label">
+                FOR HOSPITALS
+            </span>
+
+            <h2>
+                Digital OPD kiosk at the hospital.
+            </h2>
+
+            <p>
+                Patients who do not have a smartphone or prefer
+                on-site registration can use a HealQ kiosk installed
+                at the hospital reception or OPD area.
+            </p>
+
+            <p>
+                The kiosk connects to the same queue system,
+                allowing patients to register themselves and
+                receive a digital OPD token.
+            </p>
+
+            <a href="#pilot" class="primary-button">
+                Request Hospital Pilot →
+            </a>
+
+        </div>
+
+
+        <div class="kiosk-card">
+
+            <div class="kiosk-screen">
+
+                <div class="kiosk-top">
+                    <strong>HealQ</strong>
+                    <span>OPD KIOSK</span>
+                </div>
+
+                <h3>
+                    Welcome to Digital OPD
+                </h3>
+
+                <p>
+                    Register yourself in a few simple steps.
+                </p>
+
+                <div class="kiosk-option">
+                    🏥 Select Hospital
+                </div>
+
+                <div class="kiosk-option">
+                    👨‍⚕️ Select Department
+                </div>
+
+                <div class="kiosk-option">
+                    🎫 Get Token
+                </div>
+
+                <div class="kiosk-button">
+                    Start Registration
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DASHBOARD
+========================================================= -->
+
+<section id="dashboard" class="section dashboard-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            LIVE DASHBOARD
+        </span>
+
+        <h2>
+            OPD at a glance.
+        </h2>
+
+        <p>
+            Demo hospital operations dashboard powered by the same
+            booking data used by the patient interface.
+        </p>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <span class="stat-label">
+                PATIENTS WAITING
+            </span>
+
+            <strong id="dash-queue">
+                16
+            </strong>
+
+            <small>
+                Across departments
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">
+                DOCTORS ON DUTY
+            </span>
+
+            <strong id="dash-doctors">
+                11 / 14
+            </strong>
+
+            <small>
+                Currently available
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">
+                BEDS AVAILABLE
+            </span>
+
+            <strong id="dash-beds">
+                23
+            </strong>
+
+            <small>
+                Out of 30 beds
+            </small>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-label">
+                AVG DELAY
+            </span>
+
+            <strong id="dash-delay">
+                +6 min
+            </strong>
+
+            <small>
+                Current OPD delay
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-layout">
+
+        <div class="dashboard-board">
+
+            <div class="dashboard-title">
+                Department Queue
+            </div>
+
+            <div id="dashboard-departments">
+
+                <!-- Filled by JS -->
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-info">
+
+            <h3>
+                Hospital Operations
+            </h3>
+
+            <p>
+                HealQ provides a centralized view of OPD
+                workload, waiting patients and available resources.
+            </p>
+
+            <div class="info-item">
+                <span>●</span>
+                Real-time queue monitoring
+            </div>
+
+            <div class="info-item">
+                <span>●</span>
+                Department-wise workload
+            </div>
+
+            <div class="info-item">
+                <span>●</span>
+                Doctor availability
+            </div>
+
+            <div class="info-item">
+                <span>●</span>
+                Bed availability
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AI ASSISTANT
+========================================================= -->
+
+<section class="section ai-section">
+
+    <div class="ai-container">
+
+        <div class="ai-intro">
+
+            <span class="section-label">
+                HEALQ AI
+            </span>
+
+            <h2>
+                Basic health guidance.
+            </h2>
+
+            <p>
+                Describe your symptoms and HealQ AI can suggest
+                an appropriate OPD department for this demo.
+            </p>
+
+            <div class="ai-warning">
+                ⚠ Demo only — HealQ AI does not diagnose medical
+                conditions. For emergencies, seek immediate medical care.
+            </div>
+
+        </div>
+
+
+        <div class="chat-card">
+
+            <div class="chat-header">
+                <strong>HealQ AI Assistant</strong>
+                <span>● Online</span>
+            </div>
+
+
+            <div id="chat-log" class="chat-log">
+
+                <div class="bubble ai">
+
+                    <span class="tag">
+                        HealQ AI
+                    </span>
+
+                    Hi! Tell me briefly what you're experiencing.
+                    I can suggest a suitable OPD department.
+
+                </div>
+
+            </div>
+
+
+            <form id="chat-form" class="chat-form">
+
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="e.g. fever and body ache"
+                    autocomplete="off"
+                >
+
+                <button type="submit">
+                    Send
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESEARCH
+========================================================= -->
+
+<section id="research" class="section research-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            RESEARCH & TECHNOLOGY
+        </span>
+
+        <h2>
+            Built for a smarter OPD ecosystem.
+        </h2>
+
+    </div>
+
+
+    <div class="research-grid">
+
+        <div class="research-card">
+            <h3>Digital Registration</h3>
+            <p>
+                Patient registration through web/mobile interface
+                and hospital kiosk.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>Queue Intelligence</h3>
+            <p>
+                Queue length and consultation time are used to
+                estimate waiting time.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>ABHA / UHID Ready</h3>
+            <p>
+                Patient identification fields support ABHA or
+                hospital UHID workflows.
+            </p>
+        </div>
+
+        <div class="research-card">
+            <h3>Hospital Analytics</h3>
+            <p>
+                Centralized operational information for better
+                OPD management.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PILOT
+========================================================= -->
+
+<section id="pilot" class="pilot-section">
+
+    <div class="pilot-container">
+
+        <div class="pilot-intro">
+
+            <span class="section-label">
+                HOSPITAL PILOT
+            </span>
+
+            <h2>
+                Bring HealQ to your OPD.
+            </h2>
+
+            <p>
+                Start with a simple pilot at one department and
+                scale across the hospital.
+            </p>
+
+        </div>
+
+
+        <form id="pilot-form" class="pilot-form">
+
+            <div class="two-column">
+
+                <div class="form-group">
+
+                    <label for="pilot-name">
+                        Your Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pilot-name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="pilot-email">
+                        Work Email *
+                    </label>
+
+                    <input
+                        type="email"
+                        id="pilot-email"
+                        name="email"
+                        placeholder="Work email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="two-column">
+
+                <div class="form-group">
+
+                    <label for="pilot-hospital">
+                        Hospital / Organization *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pilot-hospital"
+                        name="hospital"
+                        placeholder="Hospital / organization"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="pilot-phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="pilot-phone"
+                        name="phone"
+                        placeholder="Phone number"
+                        maxlength="10"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="pilot-message">
+                    Tell us about your OPD
+                </label>
+
+                <textarea
+                    id="pilot-message"
+                    name="message"
+                    rows="4"
+                    placeholder="Patient volume, current pain points, departments..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="pilot-button"
+            >
+                Request a Pilot →
+            </button>
+
+        </form>
+
+
+        <div
+            id="pilot-success"
+            class="pilot-success"
+            hidden
+        >
+            <h3>✓ Pilot request received!</h3>
+
+            <p>
+                Thank you. This demo has recorded your request successfully.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <span class="logo-mark"></span>
+            HealQ
+        </div>
+
+        <p>
+            Smart OPD Queue Management
+        </p>
+
+        <button
+            id="reset-demo"
+            class="reset-button"
+            type="button"
+        >
+            Reset Demo Data
+        </button>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 HealQ — Demo / Prototype
+    </div>
+
+</footer>
+
+
+<!-- IMPORTANT: file must be named script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
